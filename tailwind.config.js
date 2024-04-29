@@ -33,6 +33,8 @@ module.exports = {
       animation: {
         "move-y": "move-y 5s ease-in-out infinite",
         "move-x": "move-x .5s ease-in-out",
+        opacity: "opacity 3s ease-in-out infinite",
+        opacity2: "opacity2 2.5s ease-in-out infinite",
       },
       keyframes: {
         "move-y": {
@@ -42,6 +44,16 @@ module.exports = {
         "move-x": {
           "0%,50%,100%": { transform: "translateX(-10px)" },
           "25%,75%": { transform: "translateX(10px)" },
+        },
+        opacity: {
+          "0%": { opacity: "0.1" },
+          "25%,75%": { opacity: "0.3" },
+          "50%,100%": { opacity: "0.2" },
+        },
+        opacity2: {
+          "0%": { opacity: "0.1" },
+          "25%,75%": { opacity: "0.3" },
+          "50%,100%": { opacity: "0.2" },
         },
       },
     },
