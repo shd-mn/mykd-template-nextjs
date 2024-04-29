@@ -4,7 +4,7 @@ import { linkData } from "./data/linkData";
 
 export default function Navbar() {
   return (
-    <nav className="flex">
+    <nav className="hidden xl:flex">
       <ul className="flex gap-4">
         {linkData.map((item, idx) => (
           <li className="" key={idx}>

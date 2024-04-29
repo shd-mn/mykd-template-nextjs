@@ -4,8 +4,8 @@ export const linkData = [
         href:'/'
     },
     {
-        text: 'ABOUT US',
-        href:'/about-us'
+        text: 'SHOP',
+        href:'/shop'
     },
     {
         text: 'TOURNAMENT',

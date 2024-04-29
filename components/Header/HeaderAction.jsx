@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HeaderAction() {
   return (
-    <div className="flex items-center gap-4">
+    <div className="hidden sm:flex items-center gap-4">
       <button type="button" className="text-t-gray-clr mr-8">
         <FontAwesomeIcon size="xl" icon={faMagnifyingGlass} />
       </button>

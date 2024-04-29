@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${berlinSans.variable} ${barlow.variable}`}>
-      <body className={`${barlow.className} bg-dark-clr text-white`}>
+      <body className={`${barlow.className} overflow-x-hidden bg-dark-clr text-white`}>
         <Header />
         {children}
         <Footer />

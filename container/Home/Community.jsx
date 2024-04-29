@@ -19,10 +19,10 @@ export default function Community() {
             <button type="button" className="duration-300 hover:text-primary">
               <FontAwesomeIcon size="4x" icon={faCirclePlay} />
             </button>
-            <h2 className="text-[55px] font-bold leading-none tracking-wider">
+            <h2 className="text-center text-2xl font-bold leading-none tracking-wider sm:text-start sm:text-[40px] lg:text-[55px]">
               JOIN THE <span className="text-primary">COMMUNITY</span>
             </h2>
-            <p className="mb-4 font-bold">
+            <p className="mb-4 text-center font-bold sm:text-start">
               Join our Discord community and choosec onsteur
             </p>
             <button
@@ -41,10 +41,10 @@ export default function Community() {
         className="py-[150px]"
         style={{ backgroundImage: 'url("./images/roadmap_bg.jpg")' }}
       >
-        <div className="container px-32">
-          <div className="grid grid-cols-2">
-            <div className="w-3/4">
-              <h2 className="mb-8 text-[55px] font-extrabold leading-none tracking-widest">
+        <div className="container px-8 lg:px-32">
+          <div className="grid xl:grid-cols-2">
+            <div className="xl:w-3/4">
+              <h2 className="mb-8 text-center text-2xl font-extrabold leading-none tracking-widest sm:text-start sm:text-[40px] md:text-[50px] lg:text-[55px]">
                 A LOOK INTO ROADMAPS SEASONS
               </h2>
               <p className="mb-5 font-bold leading-9 tracking-wide text-t-gray-clr">
@@ -61,15 +61,15 @@ export default function Community() {
                 </span>
                 ROADMAP
               </button>
-              <div className="py-20 animate-move-y">
-                <Image src={roadmapImg} alt='' />
+              <div className="animate-move-y py-20">
+                <Image src={roadmapImg} alt="" />
               </div>
             </div>
-            <div className="relative flex flex-col gap-6 before:absolute before:-left-10 before:top-0 before:h-full before:w-[6px] before:bg-gradient-to-b before:rounded-full before:from-primary before:z-10 before:to-transparent">
+            <div className="relative flex flex-col gap-6 before:absolute before:-left-5 before:top-0 before:z-10 before:h-full before:w-[6px] before:rounded-full before:bg-gradient-to-b before:from-primary before:to-transparent lg:before:-left-10">
               {communityData.map((article, idx) => (
                 <article
                   key={idx}
-                  className={`shadow-[0px_3px_7px_0px_#00000036 relative rounded-md bg-[#1b242e] p-11 ${idx === 0 && "before:absolute before:-left-9 before:top-1/2 before:h-3 before:w-5 before:-translate-y-1/2 before:border-[20px] before:border-transparent before:border-l-primary/90"}`}
+                  className={`shadow-[0px_3px_7px_0px_#00000036 relative rounded-md bg-[#1b242e] p-11 ${idx === 0 && "before:absolute before:-left-4 before:top-1/2 before:h-3 before:w-5 before:-translate-y-1/2 before:border-[20px] before:border-transparent before:border-l-primary/90 lg:before:-left-9"}`}
                 >
                   <h3 className="mb-6 text-[30px] font-extrabold">
                     {article.title}
