@@ -32,11 +32,16 @@ module.exports = {
       },
       animation: {
         "move-y": "move-y 5s ease-in-out infinite",
+        "move-x": "move-x .5s ease-in-out",
       },
       keyframes: {
         "move-y": {
           "0%, 100%": { transform: "translateY(-10px)" },
           "50%": { transform: "translateY(10px)" },
+        },
+        "move-x": {
+          "0%,50%,100%": { transform: "translateX(-10px)" },
+          "25%,75%": { transform: "translateX(10px)" },
         },
       },
     },
