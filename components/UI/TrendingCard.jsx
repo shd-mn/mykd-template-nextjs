@@ -12,7 +12,7 @@ export default function TrendingCard({ data }) {
         src={bgImg}
         alt=""
         quality={100}
-        className="absolute left-0 top-0 -z-10 h-full w-full object-contain"
+        className="absolute left-0 top-0 -z-10 h-full w-full object-fill"
       />
 
       <div className="mb-3 flex items-start justify-between">

@@ -13,7 +13,7 @@ export default function TopTrending() {
     <section className="pb-[90px] pt-[120px]">
       <div className="container">
         <div className="flex relative items-center gap-4 -mb-16">
-          <h2 className="text-4xl font-extrabold">TOP TRENDING</h2>
+          <h2 className="text-2xl text-center sm:text-start md:text-4xl font-extrabold">TOP TRENDING</h2>
           <span
             className="inline-block bg-contain bg-no-repeat w-9 h-9"
             style={{ backgroundImage: 'url("../images/fire.png")' }}

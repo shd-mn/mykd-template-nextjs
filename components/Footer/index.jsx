@@ -12,9 +12,9 @@ import { faAnglesRight, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0f161b]">
+    <footer className="bg-[#0f161b] border-t-[0.5px] border-gray-800">
       <div className="container">
-        <div className="grid grid-cols-[2fr_1fr_1fr_1.5fr] gap-10 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.5fr] gap-10 py-20">
           <div className="flex flex-col items-start gap-6">
             <Link href="/" className="inline-block h-[40px] w-fit">
               <Image
@@ -191,7 +191,7 @@ export default function Footer() {
       </div>
       <div className="bg-[#090d10]">
         <div className="container">
-          <div className="flex justify-between gap-2 py-5">
+          <div className="flex flex-wrap justify-center sm:justify-between gap-2 py-5">
             <h6 className="text-sm font-bold">
               COPYRIGHT © 2023 - ALL RIGHTS RESERVED BY
               <span className="text-primary ml-1">MYKD</span>

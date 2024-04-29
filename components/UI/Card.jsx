@@ -5,7 +5,7 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card({ data }) {
   return (
-    <div className="card grid grid-cols-[1fr_1.6fr] gap-5 rounded-md border border-transparent bg-[#121a23] p-6 duration-300 hover:border-[#45f88233]">
+    <div className="card grid sm:grid-cols-[1fr_1.6fr] gap-5 rounded-md border border-transparent bg-[#121a23] p-6 duration-300 hover:border-[#45f88233]">
       <Image
         src={data.img}
         alt=""
@@ -18,7 +18,7 @@ export default function Card({ data }) {
         </Link>
         <div className="flex flex-col gap-4 mb-3">
           <div className="flex items-center gap-5">
-            <Image src={data.creator_img} alt="creator" />
+            <Image src={data.creator_img} alt="creator" className="" />
             <Link href={data.creator_link} className="text-text-gray-clr">
               {data.creator}
             </Link>
