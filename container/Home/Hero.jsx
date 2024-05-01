@@ -7,6 +7,7 @@ import brandLogo1 from "@/public/images/brand_logo01.png";
 import brandLogo2 from "@/public/images/brand_logo02.png";
 import brandLogo3 from "@/public/images/brand_logo03.png";
 import textGradient from "@/public/images/text_gradient_bg.png";
+import shape from "@/public/images/slider_shape02.png";
 import { ButtonBg } from "./data/icons";
 
 export default function Hero() {
@@ -63,7 +64,7 @@ export default function Hero() {
             </p>
             <button
               type="button"
-              className="group relative mb-32 md:mb-52 px-12 py-4 font-bold text-dark-clr "
+              className="group relative mb-32 px-12 py-4 font-bold text-dark-clr md:mb-52 "
             >
               <span className="absolute left-0 top-0 -z-10 h-full w-full">
                 <ButtonBg className="h-full w-full fill-primary stroke-white duration-300 group-hover:fill-white" />
@@ -113,6 +114,28 @@ export default function Hero() {
               }}
             />
           </div>
+        </div>
+        <div>
+          <Image
+            src={shape}
+            alt=""
+            className="animate-opacity absolute left-1/2 top-[20%] z-10 h-8 w-8 object-contain"
+          />
+          <Image
+            src={shape}
+            alt=""
+            className="animate-opacity2 top-[18%] absolute left-[45%] z-10 h-6 w-6 object-contain"
+          />
+          <Image
+            src={shape}
+            alt=""
+            className="animate-opacity absolute left-[15%] top-[20%] z-10 h-5 w-5 object-contain"
+          />
+          <Image
+            src={shape}
+            alt=""
+            className="animate-opacity2 top-[58%] absolute left-[35%] z-10 h-6 w-6 object-contain"
+          />
         </div>
       </div>
     </section>
