@@ -15,6 +15,7 @@ export default function GalerySlider({ data }) {
       centeredSlides={true}
       scrollbar={{
         hide: false,
+        draggable: true,
       }}
       modules={[Scrollbar]}
       className="galery-swiper h-full w-full"
@@ -37,7 +38,7 @@ export default function GalerySlider({ data }) {
               className="mb-6 h-[360px] w-full scale-90 border-[8px] border-[#2c3137] object-cover duration-300 sm:h-[440px] md:h-[540px]"
             />
             <div className="galery-content invisible flex w-full scale-0 items-center justify-between opacity-0 transition-all duration-300">
-              <h3 className="text-xl md:text-[26px] font-extrabold tracking-widest">
+              <h3 className="text-xl font-extrabold tracking-widest md:text-[26px]">
                 {item.title}
               </h3>
               <span className="font-bold text-t-gray-clr">
